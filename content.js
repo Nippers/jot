@@ -7,7 +7,9 @@ dialog.push("If we're in a computer game then someone must have created the game
 //"Why would the Developer write to me? If she created the game, she already knows and controls everything that's going to happen. It's impossible for me to surprise her."
 //"Who knows why the Developer does what she does. I wouldn't worry about it too much."
 //"I can't help worrying. I might not even be a real person!"
-
+var letters = [];
+letters.push("");
+letters.push("Dear Mr. Jiblet,<br>Who are you?<br>What is the world?");
 
 var canvas = document.getElementById("canvas"),
     ctx = canvas.getContext("2d"),
