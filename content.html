@@ -1,8 +1,16 @@
+<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 
-<canvas id="canvas" width="600px" height="330px" border="1px solid black"></canvas>
-<div id="text" style="width:600px; font-family:monospace;">
-  Like many of us, Mr. Jiblet woke up this morning in an existential fug.
+<div id="game">
+  <div id="can"><canvas id="canvas"></canvas></div>
+  <div id="letters">
+    <button onclick="closeLetter()" style="float:right">X</button>
+    <div id="letterText"></div>
+  </div>
+  <div id="text">
+    I woke up this morning in an existential fug.
+  </div>
 </div>
+
 <img id="wallPic" src="https://2.bp.blogspot.com/-NeJkWxS_JGE/WVWIU7aA86I/AAAAAAAAFp8/dKPzYHdUimQvHsB-PPWiGkDSPTfqnzGSgCLcBGAs/s1600/wall%2B%25284%2529.png" style="display:none">
 <img id="shortWallPic" src="https://3.bp.blogspot.com/-zq1CBYI0VqU/WXP3Osn6PEI/AAAAAAAAF6Q/iexjUAZ1whIAi71KdEvbwP5IeiUvz1rIwCLcBGAs/s1600/wall2%2B%25281%2529.png" style="display:none">
 <img id="squarePic" src="https://2.bp.blogspot.com/-SanSVLd-r_U/WVV4SMJHDgI/AAAAAAAAFpo/v6BEacW14cY8Gf8lhWSTb6qZuBb01SUOwCLcBGAs/s1600/block%2B%25284%2529.png" style="display:none">
@@ -27,5 +35,36 @@
 <img id="ladderPic" src="https://4.bp.blogspot.com/-LfPsgmyEnac/WXTya5gMkHI/AAAAAAAAF7c/TZE0pBJVy44U4hMz6T6MJ5CrsvVjEdYBACLcBGAs/s1600/ladder.png" style="display:none">
 <img id="bustsPic" src="https://3.bp.blogspot.com/-FmjApUQ4tPk/WXeXLshrxCI/AAAAAAAAF-c/_61ANVikwrQZ5oWB_ULe2iDckfIisBd7ACLcBGAs/s1600/tables%2B%25281%2529.png" style="display:none">
 <img id="globePic" src="https://3.bp.blogspot.com/-fle7SUogLA4/WXahYGx6kGI/AAAAAAAAF8s/XDjOuerh0gkV85vXccRDB85RHxW6YF0fACLcBGAs/s1600/globe%2B%25281%2529.png" style="display:none">
+<img id="windmillPic" src="https://4.bp.blogspot.com/-UkDh3_I3bdY/WXwxYLz3TjI/AAAAAAAAF_k/jEpB9t6W6vkBjoq4_3ErVgF6XUQKxSqTgCLcBGAs/s1600/pinwheel.png" style="display:none">
 
-<!--<script src="jiblet.js"></script>-->
+<script src="jiblet.js"></script>
+<style>
+#game{
+  width:1000;
+}
+#can{
+  float:left;
+  width:600px;
+  height:330px;
+  border:1px solid black;
+}
+#letters{
+  float:right;
+  width:300;
+  height:200;
+  position:relative;
+  right:150;
+  top:20;
+  font-family:monospace;
+  border:1px solid black;
+  background-color:ivory;
+  padding:10px;
+  display:none;
+}
+#text{
+  width:600px;
+  font-family:'Gloria Hallelujah', cursive;
+  padding:5px;
+}
+
+</style>
